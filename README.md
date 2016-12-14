@@ -1,1 +1,0 @@
-# JSTechTask
