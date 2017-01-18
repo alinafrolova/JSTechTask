@@ -7,8 +7,6 @@ background:#c0c0c0;
 min-width: 500px;
 max-width: 2500px;
 margin: auto;
-
-
 }
 
 .content-white {
@@ -20,23 +18,25 @@ margin: auto;
 .blockstyle{
 margin: 0 auto;
 width:815px;
-
-
 }
 
 #header{
 background:  #f6f8f9;
 height:145px;
 text-align: justify;
-letter-spacing: 1px;    
-padding: 1em 0%;
+letter-spacing: 1px;
+padding: 2em 0%;
 
+}
+#imgheader {
+    margin: 1px 30px;
 }
 
 header nav {
     display: inline-block;
     height: auto;
     width: auto;
+
 }
 
 header::after {
@@ -53,12 +53,13 @@ background: #e2e2e2; /* Old browsers */
 background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
-font-size: 19px;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */  font-size: 19px;
    font-family: Georgia, serif;
    text-decoration: none;
-   vertical-align: middle;
    border-radius: 5px;
+    float: left;
+    margin: 10px;
+
 }
 
 
@@ -69,37 +70,61 @@ background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-height:200px;
+height:170px;
 
 }
 .contactstyle{
 	font-family: 'Muli', sans-serif;
 	font-size: 18px;
-	border: 10px;
+	border: 20px;
 
 }
+  .contacttable{
+	width:30%;
+}
+   .contactimg{
+	  width:30px;
+	  height:30px;
+	  padding-right: 20px;
+	   padding-top: 10px;
+  }
 .image{
-	border: 50px; 0px solid rgba(0, 0, 0, 0);
-	width:30;
-    height:30;
+	border: 50px; solid: rgba(0, 0, 0, 0);
+	width:30px;
+    height:30px;
+	align:"right";
 	
 }
    table {
-    width: 100%; /* Ширина таблицы */   
+    width: 100%; /* Ширина таблицы */
+	cellspacing: 5;
+	cellpadding:5;
     border-spacing: 2px; /* Расстояние между ячейками */
-    padding-left: 33px;
-    padding-left: 33px;
-   }
 
- th {   
+
+   }
+ td {
+	padding-bottom: 5px;
+}
+ .contentTH{
 
     font-family: arial, verdana, sans-serif;
     border:15px;
     padding: 2px;    
-    padding-right: 35px;
+   // padding-right: 35px;
+	 text-align:right;
+	 width:32%;
+	 valign:top;
       }
+  h4 {
+	  margin-bottom: 1px;
+	  margin-top: 10px;
+  }
+ .titlestyle {
+  color:#6F84FF;
+ }
   
-   .line { 
+.line {
     border-left: 2px solid #ccc; /* Параметры линии */ 
     margin-left: 20px; /* Отступ слева */
     padding-left: 10px; /* Расстояние от линии до текста */ 
@@ -112,10 +137,19 @@ background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #f5f7f9 100%); /
 background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
-
-
-height:170px;
+height:130px;
+padding-top: 20px;
 }
+.tooltip{
+	position:fixed;
+	z-index:999;
+	left:-9999px;
+	background-color:#dedede;
+	padding:5px;
+	border:1px solid #fff;
+	width:250px;
+}
+
 #workcontent{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,f5f7f9+100 */
 background: #f6f8f9; /* Old browsers */
@@ -126,12 +160,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 height:500px;
 }
-#footer{
-background:darkred;
 
-height:100px;
+	/* Footer */
+#footer {
+	background: #f6f8f9;
+	height: 50px;
 }
- 
+
+.pf-author {
+	color: #999;
+	margin-top: 0px;
+
+}
+
+
+/*Modal Window */
 	.modalDialog {
 		position: fixed;
 		font-family: Arial, Helvetica, sans-serif;
