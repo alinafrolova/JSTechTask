@@ -4,9 +4,12 @@
      <title>CV</title>
      <link rel="stylesheet" type="text/css" href="css/style.css">
      <link href="https://fonts.googleapis.com/css?family=Lato:900i|Muli:400,700" rel="stylesheet">
-     <script> src="https://code.jquery.com/jquery-3.1.1.js" </script>
-     <script src="js/submit.js"></script>
-       <script src="js/jquery-3.1.1.js"></script>
+     <script> src="https://code.jquery.com/jquery-3.1.1.js" </script>   
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script src="js/submit.js"></script>  
+     <script src="js/ui.js"></script>  
+  
    </head>
 
    <body>
@@ -25,7 +28,7 @@
             <form id="form">
           <tr>
            <th class="lable" > Your name</th>
-           <td class="input"> <input name = "name" class="input" placeholder="Name" type="text" required placeholder="Your name" maxlength="20" tabindex = "next" autofocus></td>
+           <td class="input"> <input id = "name" name = "name" class="input" placeholder="Name" type="text" required placeholder="Your name" maxlength="20" tabindex = "next" autofocus></td>
           </tr>
           <tr>
            <th class="lable" > Your e-mail</th>
@@ -33,11 +36,11 @@
           </tr>
           <tr>
            <th class="lable" > Your telephone number </th>
-           <td class="input"> <input phone = "phone" class="input" placeholder="+38(mob code)-000-00-00" pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="16"  type="text"></td>
+           <td class="input"> <input phone = "phone" class="input" placeholder="+38(code)000-00-00" pattern="+38[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="16"  type="text"></td>
           </tr>
            <tr>
            <th class="lable"> Your message</th>
-           <td class="input"> <textarea class="input" placeholder="Your message" pattern="[A-Za-z]" ></textarea></td> 
+           <td class="input"> <textarea class="input" placeholder="Your message" ></textarea></td> 
           </tr>
           <tr>
            <br><br>   
@@ -65,7 +68,38 @@
 
          <th class = contactimg> <img src="images/rss_feed.jpg" class = "image"></th>
          
-         <th class = "line" class = contacttable> <p> My resume </p> </th>
+         <th class = "line" class = contacttable onclick="javascript:window.location='#openResume'"> <p> My resume </p> </th>
+            <div id="openResume" class="modalDialog" >
+               <div>
+               <a href="#close" title="Close" class="close">X</a>
+                <h2>Education </h2>
+                 <div id="accordion" >
+                 <h4>High School Student</h4>
+                  <div> 
+                   <p>
+                   As a high school student, you should place the Education section at the beginning of your resume, even if you already have work experience.
+                   Beyond that, your resume’s format and content will depend upon how much work experience you have, and how active you are as a student in high school.
+                   </p>
+                  </div>
+               <h4>College Student </h4>
+                  <div>
+                   <p>
+                   As a college student or recent graduate, you should place the Education section at the beginning of your resume. Beyond that, the length of your section will depend on the amount of work experience that you have.
+                   </p>
+                  </div>
+               <h4>Working Professional</h4>
+                  <div>
+                     <p>This section for a working professional is very straightforward. Mostly, the section exists as evidence that you have a degree of some sort. It should be placed below the Professional Experience section. All working professionals should format their Education section in this manner: </p>
+                    <ul>
+                     <li>Name of School</li>
+                     <li>School Location</li>
+                     <li>Type of Degree/Field of Study</li>
+                     <li>Graduation Year</li>
+                    </ul>
+                  </div>
+
+             </div>
+            </div> 
          <th class = contactimg><img src="images/ar.jpeg" width="30" class = "image"> </th>
       </tr>
       <tr >
@@ -131,17 +165,26 @@
        </tbody>
       </table>
      </div>
-     <div id="footer" class = "blockstyle">©
-         <p class="pf-author">   Frolova Alina alinkamog@gmail.com</p>
+     <div id="footer" class = "blockstyle">
+      <div id="social">
+        <a target="_blank" rel="nofollow" href="http://facebook.com">
+        <img border="0" src="http://3.bp.blogspot.com/-0KyMme_T5lc/U6cUk9eMKJI/AAAAAAAAIAo/_in4gv6I9To/s320/facebook.png"style="margin-right: 1px;" /></a>
+        <a target="_blank" rel="nofollow" href="http://google.com">
+        <img border="0" src="http://3.bp.blogspot.com/-6kC_GqGGU-Q/U6cUlKraBxI/AAAAAAAAIAw/lw7-ybo7c6w/s320/google_plus.png"style="margin-right: 1px;" /></a>        
+       <a target="_blank" rel="nofollow" href="http://linkedin.com">
+      <img border="0" src="http://4.bp.blogspot.com/-IeAVfKPKuBY/U6cUmA9FWJI/AAAAAAAAIBk/uclglLdXHTQ/s320/linkedin.png"style="margin-right: 1px;" /></a>
+       <p class="pf-author">   Frolova Alina alinkamog@gmail.com</p>
+      </div>         
 
      </div>
      </div>
      
    </body>
+
 <script>
-    document.body.onmouseover = document.body.onmouseout = handler;
-    var showingTooltip;
-    function handler(event) {
+  document.body.onmouseover = document.body.onmouseout = handler;
+    var showingTooltip;   
+     function handler(event) {
 
 
         if (!event.target.hasAttribute('data-tooltip')) return;

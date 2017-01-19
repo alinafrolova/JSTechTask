@@ -22,7 +22,7 @@ width:815px;
 
 #header{
 background:  #f6f8f9;
-height:145px;
+height:130px;
 text-align: justify;
 letter-spacing: 1px;
 padding: 2em 0%;
@@ -92,9 +92,11 @@ height:170px;
 	border: 50px; solid: rgba(0, 0, 0, 0);
 	width:30px;
     height:30px;
-	align:"right";
+	align:right;
 	
 }
+
+
    table {
     width: 100%; /* Ширина таблицы */
 	cellspacing: 5;
@@ -164,13 +166,28 @@ height:500px;
 	/* Footer */
 #footer {
 	background: #f6f8f9;
-	height: 50px;
+	height: 80px;
 }
 
 .pf-author {
 	color: #999;
 	margin-top: 0px;
 
+}
+#social img {
+-moz-transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+transition: all 0.8s ease-in-out;
+}
+/* Поворот на 360 градусов при наведении курсора*/
+#social img:hover {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
 }
 
 
