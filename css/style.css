@@ -248,6 +248,16 @@ height:500px;
 				color: #1C5455;
                 }  
     input {
-    	size:50px;
-    	maxlength:40px;
-    }                   
+    	size:50px;    	
+    	-moz-box-sizing: border-box; /* в Firefox нужен префикс */
+        box-sizing: border-box;
+        width: 100%;
+    }     
+    textarea {  
+        height: 100px; /* Высота поля в пикселах */
+        resize: none; /* Запрещаем изменять размер */
+       -moz-box-sizing: border-box; /* в Firefox нужен префикс */
+       box-sizing: border-box;
+       width: 100%;
+   }                   
+              
