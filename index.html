@@ -15,10 +15,40 @@
    <div id="body" class = "content-white">
        <div id="header" class = "blockstyle">
            <img src="images/man.png" width="120" height="160" align="left" id="imgheader" >
-           <div> <p class = "contactstyle">Hi, name is Roberth and I'm an experienced web <br>developer with over 7 years of experience, building <br>rich robust web aplecations </p></div>
+           <div margin-top="20px" > <p class = "contactstyle">Hi, name is Roberth and I'm an experienced web <br>developer with over 7 years of experience, building <br>rich robust web aplecations </p></div>
            <nav style="padding-left: 400px;">
                <div id="buttonContact"><button autofocus class = "buttonstyle" value = "contact" onclick="javascript:window.location='#openModal'" >Contact me </button></div>
-
+               <div id="openModal" class="modalDialog" >
+                   <div>
+                       <a href="#close" title="Close" class="close">X</a>
+                       <h2>Send me your please</h2>
+                       <div >
+                           <form id="form" class = "form">
+                               <div>
+                                   <div class="lable" > Your name</div>
+                                   <div class="input"> <input id = "name" name = "name" class="input" placeholder="Name" type="text" required placeholder="Your name" title="enter your name"maxlength="20" tabindex = "next" autofocus></div>
+                               </div>
+                               <div>
+                                   <div class="lable" > Your e-mail</div>
+                                   <div class="input"> <input email = "email" class="input" placeholder="E-mail" required placeholder="Your e-mail" title="enter your e-mail" pattern="\@" maxlength="20"  type="text" ></div>
+                               </div>
+                               <div>
+                                   <div class="lable" > Your telephone number </div>
+                                   <div class="input"> <input phone = "phone" class="input" placeholder="+38(code)000-00-00" title="enter your mobile phone in the format +38(code)000-00-00" pattern="+38[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="16"  type="text"></div>
+                               </div>
+                               <div>
+                                   <div class="lable"> Your message</div>
+                                   <div class="input"> <textarea class="input" placeholder="Your message" title="enter your message, please" ></textarea></div>
+                               </div>
+                               <div>
+                                   <br><br>
+                                   <div> </div>
+                                   <div align="center"> <input name="mail_submit" type="submit" value="submit" > </div>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
                <div id="buttonRequest" onclick="javascript:window.location='#requestData'"><button class = "buttonstyle" value = "request" >Request a contact </button></div>
                <div id="requestData" class="modalDialog" >
                    <div>
@@ -34,18 +64,109 @@
        </div>
 
    <div id = "contact" class = "blockstyle">
-    <div class ="blockmenu">Contact info<br> <p>Roberth Smith <br> Location: London, UK  <br> <br> Phone: 0765 339 504<br>Fax: <br> E-mail: robertSmith@gmail.com</p></div>
+    <div class ="blockmenu"><p class = "contactstyle">Contact info</p> <p >Roberth Smith <br> Location: London, UK  <br> <br> Phone: 0765 339 504<br>Fax: <br> E-mail: robertSmith@gmail.com</p></div>
     <div class = blockmenuimg class = contactimg ><img src="images/iks.png" class = "image"  ></div>
-    <div class ="blockmenu"> Social accounts <p > Fliker <br>Youtube  <br>Vlutheo<br>Facebook<br>Linked In </p></div><div class = blockmenuimg class = contactimg><img src="images/rss_feed.jpg" class = "image"></div>
-    <div class ="blockmenu" onclick="javascript:window.location='#openResume'" data-tooltip = "You can see list of education"> My resume <p > Education <br> Technical skills <br> Work Experience<br> Recomandations <br>Portfolio</p></div>
-    <div class = blockmenuimg class = contactimg><img src="images/ar.jpeg" width="30" class = "image"></div>
+    <div class ="blockmenu"><p class = "contactstyle"> Social accounts </p><p > Fliker <br>Youtube  <br>Vlutheo<br>Facebook<br>Linked In </p></div><div class = blockmenuimg class = contactimg><img src="images/rss_feed.jpg" class = "image"></div>
+    <div class ="blockmenu" onclick="javascript:window.location='#openResume'" data-tooltip = "You can see list of education"><p class = "contactstyle"> My resume</p>   <p > Education <br> Technical skills <br> Work Experience<br> Recomandations <br>Portfolio</p></div>
+       <div id="openResume" class="modalDialog" >
+           <div>
+               <a href="#close" title="Close" class="close">X</a>
+               <h2>Education </h2>
+               <div id="accordion" >
+                   <h4>High School Student</h4>
+                   <div>
+                       <p>
+                           As a high school student, you should place the Education section at the beginning of your resume, even if you already have work experience.
+                           Beyond that, your resume’s format and content will depend upon how much work experience you have, and how active you are as a student in high school.
+                       </p>
+                   </div>
+                   <h4>College Student </h4>
+                   <div>
+                       <p>
+                           As a college student or recent graduate, you should place the Education section at the beginning of your resume. Beyond that, the length of your section will depend on the amount of work experience that you have.
+                       </p>
+                   </div>
+                   <h4>Working Professional</h4>
+                   <div>
+                       <p>This section for a working professional is very straightforward. Mostly, the section exists as evidence that you have a degree of some sort. It should be placed below the Professional Experience section. All working professionals should format their Education section in this manner: </p>
+                       <ul>
+                           <li>Name of School</li>
+                           <li>School Location</li>
+                           <li>Type of Degree/Field of Study</li>
+                           <li>Graduation Year</li>
+                       </ul>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+     <div class = blockmenuimg class = contactimg><img src="images/ar.jpeg" width="30" class = "image"></div>
+    </div>
+       <div id="content" class = "blockstyle">
+                   <div class = "blockcontent" >
+                       <div class = "contenttitle">
+                           <h3 > About me </h3>
+                           <div class = "contenttext"><small > How did I became a developer?</small> </div>
+                       </div>
+                   </div>
+                   <div class = "blockcontent"  > <p class = "line" >
+                       When I was six my mother gaved me on my birthday a Delphy book, and after <br>
+                       that in me was immediately born a passion for computers and also for design
+                       <br> Of course in 3 years a boughr my first Photoshop book and the rest is history. </p>
+                   </div>
+       </div>
+
+       <div id="workcontent" class = "blockstyle">
+           <div class = "blockcontent"><div class = "contenttitle"> <h3 class = "titlestyle">Work experience </h3> <small class = "titlestyle">Employers and functions along the time</small>  </div></div>
+           <div class = "blockcontent"> <div class = "line"> <p >
+                   In the past few years I've worked my way trough diffrent employers trying to <br>
+                   do my best at my job as web developer, here are a few of them that worth<br> mentioning: <br> </p> </div>
+           </div>
+
+           <div class = "blockcontent"><div class = "contenttitle" data-tooltip="Leading a small team on a variety of development projects ’ briefs."> 2004-2010 </div></div>
+           <div class = "blockcontent">
+               <div class = "line"> <p> <h4> Web developer at Enviro webdev </h4>
+                   Co-founder<br>
+                   Working alongside the senior web developer<br>
+                   to deliver optimum performance of clients’ websites<br>
+                   Preparing presentations and keeping clients up to speed with the development process
+                   Developing web code
+                   </p> </div>
+           </div>
+
+           <div class = "blockcontent"><div class = "contenttitle" data-tooltip = "Experience with design pattern, frameworks and architecture"> 2004-2006</div></div>
+           <div class = "blockcontent">
+               <div class = "line"> <p ><h4> Application architect at Ebay </h4>
+                   Being first point of call for new and current clients<br>
+                   Outlining and presenting specifications for all web based requirements<br>
+                   Hands on development of all projects from genesis to delivery<br>
+                   </p> </div>
+           </div>
+
+           <div class = "blockcontent"><div class = "contenttitle" data-tooltip = "Experience with design pattern, frameworks and architecture"> 2001-2004</div></div>
+           <div class = "blockcontent">
+               <div class = "line"> <p > <h4>Web developer at Zingo Developement</h4>
+                   Maintaining performance of existing client websites<br>
+                   Suggesting improvements on design and functionality<br>
+                   Diagnosing and rectifying performance issues<br>
+                   </p> </div>
+           </div>
+       </div>
+       <!-- close div for body lock  !-->
+       <div id="footer" class = "blockstyle">
+           <div id="social">
+               <a target="_blank" rel="nofollow" href="http://facebook.com">
+                   <img border="0" src="http://3.bp.blogspot.com/-0KyMme_T5lc/U6cUk9eMKJI/AAAAAAAAIAo/_in4gv6I9To/s320/facebook.png"style="margin-right: 1px;" /></a>
+               <a target="_blank" rel="nofollow" href="http://google.com">
+                   <img border="0" src="http://3.bp.blogspot.com/-6kC_GqGGU-Q/U6cUlKraBxI/AAAAAAAAIAw/lw7-ybo7c6w/s320/google_plus.png"style="margin-right: 1px;" /></a>
+               <a target="_blank" rel="nofollow" href="http://linkedin.com">
+                   <img border="0" src="http://4.bp.blogspot.com/-IeAVfKPKuBY/U6cUmA9FWJI/AAAAAAAAIBk/uclglLdXHTQ/s320/linkedin.png"style="margin-right: 1px;" /></a>
+               <p class="pf-author">   Frolova Alina alinkamog@gmail.com</p>
+           </div>
+
+       </div>
    </div>
 
-    </div>
-
-
-     </div>
-     
    </body>
 
  </html>

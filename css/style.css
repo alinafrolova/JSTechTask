@@ -30,12 +30,19 @@ padding: 2em 0%;
 }
 #imgheader {
     margin: 1px 30px;
+
 }
 
 header nav {
     display: inline-block;
     height: auto;
     width: auto;
+
+
+}
+ nav {
+	margin-top: 30px;
+	margin-left: 80px;
 
 }
 
@@ -92,7 +99,7 @@ height:200px;
 .contactstyle{
 	font-family: 'Muli', sans-serif;
 	font-size: 18px;
-	border: 20px;
+	margin-top: 0px;
 
 }
 
@@ -109,24 +116,38 @@ height:200px;
 	align:right;
 
 }
+.blockcontent {
+	width:47%;
+	float:left;
+	margin-left: 10px;
 
- .contentTH{
+}
+
+ .contenttitle{
 
     font-family: arial, verdana, sans-serif;
+	 color:#6F84FF;
     border:15px;
-    padding: 2px;    
-   // padding-right: 35px;
+    padding: 2px;
+
 	 text-align:right;
-	 width:32%;
-	 valign:top;
+	  valign:top;
       }
+.contenttext{
+
+	font-family: arial, verdana, sans-serif;
+	color:#6F84FF;
+	border:15px;
+	padding: 2px;
+// padding-right: 35px;
+	text-align:right;
+	valign:top;
+}
   h4 {
 	  margin-bottom: 1px;
 	  margin-top: 10px;
   }
- .titlestyle {
-  color:#6F84FF;
- }
+
   
 .line {
     border-left: 2px solid #ccc; /* Параметры линии */ 
@@ -162,7 +183,7 @@ background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); 
 background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
 
-height:500px;
+height:550px;
 }
 
 	/* Footer */
