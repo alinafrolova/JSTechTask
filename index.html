@@ -1,0 +1,51 @@
+ <html>
+
+   <head>
+       <title>CV</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link href="https://fonts.googleapis.com/css?family=Lato:900i|Muli:400,700" rel="stylesheet">
+       <script> src="https://code.jquery.com/jquery-3.1.1.js" </script>
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       <script src="js/submit.js"></script>
+       <script src="js/ui.js"></script>
+   </head>
+
+   <body>
+   <div id="body" class = "content-white">
+       <div id="header" class = "blockstyle">
+           <img src="images/man.png" width="120" height="160" align="left" id="imgheader" >
+           <div> <p class = "contactstyle">Hi, name is Roberth and I'm an experienced web <br>developer with over 7 years of experience, building <br>rich robust web aplecations </p></div>
+           <nav style="padding-left: 400px;">
+               <div id="buttonContact"><button autofocus class = "buttonstyle" value = "contact" onclick="javascript:window.location='#openModal'" >Contact me </button></div>
+
+               <div id="buttonRequest" onclick="javascript:window.location='#requestData'"><button class = "buttonstyle" value = "request" >Request a contact </button></div>
+               <div id="requestData" class="modalDialog" >
+                   <div>
+                       <a href="#close" title="Close" class="close">X</a>
+                       <div > <br>Roberth Smith <br>  Location: London, UK <br>  Phone: 0765 339 504<br> Fax: <br> E-mail: robertSmith@gmail.com<br><br>Enter your e-mail</div>
+                       <form class = "form">
+                           <div><input id="email" email = "email" class="input" placeholder="E-mail" required placeholder="Your e-mail" maxlength="20"  type="text" ></div>
+                           <div><input name="mail_submit" type="submit" value="Send me to email" > </div>
+                       </form>
+                   </div>
+               </div>
+           </nav>
+       </div>
+
+   <div id = "contact" class = "blockstyle">
+    <div class ="blockmenu">Contact info<br> <p>Roberth Smith <br> Location: London, UK  <br> <br> Phone: 0765 339 504<br>Fax: <br> E-mail: robertSmith@gmail.com</p></div>
+    <div class = blockmenuimg class = contactimg ><img src="images/iks.png" class = "image"  ></div>
+    <div class ="blockmenu"> Social accounts <p > Fliker <br>Youtube  <br>Vlutheo<br>Facebook<br>Linked In </p></div><div class = blockmenuimg class = contactimg><img src="images/rss_feed.jpg" class = "image"></div>
+    <div class ="blockmenu" onclick="javascript:window.location='#openResume'" data-tooltip = "You can see list of education"> My resume <p > Education <br> Technical skills <br> Work Experience<br> Recomandations <br>Portfolio</p></div>
+    <div class = blockmenuimg class = contactimg><img src="images/ar.jpeg" width="30" class = "image"></div>
+   </div>
+
+    </div>
+
+
+     </div>
+     
+   </body>
+
+ </html>
