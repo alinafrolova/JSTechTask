@@ -25,6 +25,6 @@
       })
       .insertAfter( "form" );
   } );
-  </script>
+
 
 

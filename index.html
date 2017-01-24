@@ -67,7 +67,11 @@
     <div class ="blockmenu"><p class = "contactstyle">Contact info</p> <p >Roberth Smith <br> Location: London, UK  <br> <br> Phone: 0765 339 504<br>Fax: <br> E-mail: robertSmith@gmail.com</p></div>
     <div class = blockmenuimg class = contactimg ><img src="images/iks.png" class = "image"  ></div>
     <div class ="blockmenu"><p class = "contactstyle"> Social accounts </p><p > Fliker <br>Youtube  <br>Vlutheo<br>Facebook<br>Linked In </p></div><div class = blockmenuimg class = contactimg><img src="images/rss_feed.jpg" class = "image"></div>
-    <div class ="blockmenu" onclick="javascript:window.location='#openResume'" data-tooltip = "You can see list of education"><p class = "contactstyle"> My resume</p>   <p > Education <br> Technical skills <br> Work Experience<br> Recomandations <br>Portfolio</p></div>
+    <div class ="blockmenu" onclick="javascript:window.location='#openResume'">
+        <div class="tooltip">
+            <p class = "contactstyle"> My resume</p> <span>You can see list of education </span>
+        </div>
+        <p > Education <br> Technical skills <br> Work Experience<br> Recomandations <br>Portfolio</p></div>
        <div id="openResume" class="modalDialog" >
            <div>
                <a href="#close" title="Close" class="close">X</a>
@@ -103,53 +107,57 @@
      <div class = blockmenuimg class = contactimg><img src="images/ar.jpeg" width="30" class = "image"></div>
     </div>
        <div id="content" class = "blockstyle">
-                   <div class = "blockcontent" >
-                       <div class = "contenttitle">
-                           <h3 > About me </h3>
-                           <div class = "contenttext"><small > How did I became a developer?</small> </div>
-                       </div>
-                   </div>
-                   <div class = "blockcontent"  > <p class = "line" >
-                       When I was six my mother gaved me on my birthday a Delphy book, and after <br>
-                       that in me was immediately born a passion for computers and also for design
-                       <br> Of course in 3 years a boughr my first Photoshop book and the rest is history. </p>
-                   </div>
+          <div class = "contenttitle"><h3 > About me </h3>
+              <div class = "contenttext"> <div><small >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How did I became a developer?</small></div> </div>
+          </div>
+          <div class = "blockcontent"  > <p class = "line" >
+             When I was six my mother gaved me on my birthday a Delphy book, and after
+             that in me was immediately born a passion for computers and also for design
+             Of course in 3 years a boughr my first Photoshop book and the rest is history. </p>
+           </div>
        </div>
 
        <div id="workcontent" class = "blockstyle">
-           <div class = "blockcontent"><div class = "contenttitle"> <h3 class = "titlestyle">Work experience </h3> <small class = "titlestyle">Employers and functions along the time</small>  </div></div>
+           <div class = "contenttitle"> <h3 >Work experience </h3> <small>Employers and functions along the time</small></div>
            <div class = "blockcontent"> <div class = "line"> <p >
-                   In the past few years I've worked my way trough diffrent employers trying to <br>
+                   In the past few years I've worked my way trough diffrent employers trying to
                    do my best at my job as web developer, here are a few of them that worth<br> mentioning: <br> </p> </div>
            </div>
-
-           <div class = "blockcontent"><div class = "contenttitle" data-tooltip="Leading a small team on a variety of development projects ’ briefs."> 2004-2010 </div></div>
+           <div class = "contenttitle" >
+               <div class="tooltip">
+                   2004-2010 <span>"Leading a small team on a variety of development projects ’ briefs." </span>
+               </div>
+           </div>
            <div class = "blockcontent">
-               <div class = "line"> <p> <h4> Web developer at Enviro webdev </h4>
-                   Co-founder<br>
-                   Working alongside the senior web developer<br>
-                   to deliver optimum performance of clients’ websites<br>
+               <div class = "line"> <h4> Web developer at Enviro webdev </h4>
+                   <p>Co-founder<br>
+                   Working alongside the senior web developer
+                   to deliver optimum performance of clients’ websites
                    Preparing presentations and keeping clients up to speed with the development process
                    Developing web code
                    </p> </div>
            </div>
 
-           <div class = "blockcontent"><div class = "contenttitle" data-tooltip = "Experience with design pattern, frameworks and architecture"> 2004-2006</div></div>
+           <div class = "contenttitle">
+               <div class="tooltip">
+                   2004-2006 <span>"Leading a small team on a variety of development projects ’ briefs." </span>
+               </div>
+           </div>
            <div class = "blockcontent">
-               <div class = "line"> <p ><h4> Application architect at Ebay </h4>
-                   Being first point of call for new and current clients<br>
-                   Outlining and presenting specifications for all web based requirements<br>
-                   Hands on development of all projects from genesis to delivery<br>
+               <div class = "line"> <h4> Application architect at Ebay </h4>
+                   <p >Being first point of call for new and current clients
+                   Outlining and presenting specifications for all web based requirements
+                   Hands on development of all projects from genesis to delivery
                    </p> </div>
            </div>
 
-           <div class = "blockcontent"><div class = "contenttitle" data-tooltip = "Experience with design pattern, frameworks and architecture"> 2001-2004</div></div>
-           <div class = "blockcontent">
-               <div class = "line"> <p > <h4>Web developer at Zingo Developement</h4>
-                   Maintaining performance of existing client websites<br>
-                   Suggesting improvements on design and functionality<br>
-                   Diagnosing and rectifying performance issues<br>
-                   </p> </div>
+           <div class = "contenttitle">
+               <div class="tooltip">
+                   2001-2004 <span>"Leading a small team on a variety of development projects ’ briefs." </span>
+               </div>
+           </div>
+           <div class = "blockcontent" >
+               <div class = "line"> <h4>Web developer at Zingo Developement</h4><p >Maintaining performance of existing client websites Suggesting improvements on design and functionality Diagnosing and rectifying performance issues </p> </div>
            </div>
        </div>
        <!-- close div for body lock  !-->
