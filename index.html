@@ -9,6 +9,7 @@
        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
        <script src="js/submit.js"></script>
        <script src="js/ui.js"></script>
+       <script src="js/tooltipsDate.js"></script>
    </head>
 
    <body>
@@ -125,7 +126,7 @@
            </div>
            <div class = "contenttitle" >
                <div class="tooltip">
-                   2004-01 of 2010-12 <span>Jan 2004 - Dec 2010</span>
+                   2004 - 2010 <span class = "spantooltip">2004-01 of 2010-12 <br></span>
                </div>
            </div>
            <div class = "blockcontent">
@@ -140,7 +141,7 @@
 
            <div class = "contenttitle">
                <div class="tooltip">
-                   2004-12 of 2006-05 <span>"Leading a small team on a variety of development projects ’ briefs." </span>
+                   2004 - 2006 <span class = "spantooltip">2004-12 of 2006-05 <br></span>
                </div>
            </div>
            <div class = "blockcontent">
@@ -151,9 +152,9 @@
                    </p> </div>
            </div>
 
-           <div class = "contenttitle">
+           <div class = "contenttitle" >
                <div class="tooltip">
-                   2001-10 of 2004-07 <span>"Leading a small team on a variety of development projects ’ briefs." </span>
+                   2001 - 2004 <span class = "spantooltip">2001-10 of 2004-07 <br></span>
                </div>
            </div>
            <div class = "blockcontent" >
@@ -174,7 +175,40 @@
 
        </div>
    </div>
+<script>
 
+
+        var array = [];
+        function getCountMonth() {
+            var collectionTooltips = document.querySelectorAll('span[class="spantooltip"]');
+            for (var i = 0; i < collectionTooltips.length; i++) {
+                var tooltip = collectionTooltips[i].innerText;
+                array = tooltip.split (" of ");
+                var months = getDate(array);
+                var addingmoth = collectionTooltips[i].appendChild(document.createTextNode(" I worked "+ months + " months"));
+            };
+
+        }
+        function getDate(array) {
+            var date1 = array[0],
+                    date2 = array[1];
+            date1 = new Date( date1 );
+            date2 = new Date( date2 );
+
+            var months = date2.getMonth() - date1.getMonth();
+
+            if ( months < 0 ) {
+                months += 12;
+                date2.setFullYear( date2.getFullYear() - 1 );
+            }
+            var years = date2.getFullYear() - date1.getFullYear();
+            var countMonth = years *12 + months;
+            return [ countMonth];
+        }
+
+    getCountMonth();
+
+</script>
    </body>
 
  </html>
