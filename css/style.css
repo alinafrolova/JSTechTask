@@ -30,12 +30,19 @@ padding: 2em 0%;
 }
 #imgheader {
     margin: 1px 30px;
+
 }
 
 header nav {
     display: inline-block;
     height: auto;
     width: auto;
+
+
+}
+ nav {
+	margin-top: 30px;
+	margin-left: 50px;
 
 }
 
@@ -62,6 +69,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 }
 
+.blockmenu {
+	width:25%;
+	height:100%;
+	float:left;
+	margin-left: 20px;
+	margin-top:2%;
+	text-align:left;
+}
+.blockmenuimg {
+	width:5%;
+	height:100%;
+	float:left;
+	margin-top:2%;
+	margin-right:5px;
+
+}
 
 #contact{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
@@ -70,19 +93,17 @@ background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-height:170px;
+height:200px;
 
 }
 .contactstyle{
 	font-family: 'Muli', sans-serif;
 	font-size: 18px;
-	border: 20px;
+	margin-top: 0px;
 
 }
-  .contacttable{
-	width:30%;
-}
-   .contactimg{
+
+.contactimg{
 	  width:30px;
 	  height:30px;
 	  padding-right: 20px;
@@ -93,38 +114,41 @@ height:170px;
 	width:30px;
     height:30px;
 	align:right;
-	
+
+}
+.blockcontent {
+	width:65%;
+	float:left;
+	margin-left: 10px;
+	padding: 0px;
+
 }
 
-
-   table {
-    width: 100%; /* Ширина таблицы */
-	cellspacing: 5;
-	cellpadding:5;
-    border-spacing: 2px; /* Расстояние между ячейками */
-
-
-   }
- td {
-	padding-bottom: 5px;
-}
- .contentTH{
-
-    font-family: arial, verdana, sans-serif;
-    border:15px;
-    padding: 2px;    
-   // padding-right: 35px;
+ .contenttitle{
+	 font-family: arial, verdana, sans-serif;
+	 color:#6F84FF;
+     border:0px;
+     padding: 0px;
+	 float:left;
 	 text-align:right;
-	 width:32%;
 	 valign:top;
+	 width:30%;
       }
+.contenttext{
+
+	font-family: arial, verdana, sans-serif;
+	color:#6F84FF;
+	border:5px;
+	padding: 2px;
+	float:left;
+	text-align:right;
+	valign:top;
+}
   h4 {
 	  margin-bottom: 1px;
-	  margin-top: 10px;
+
   }
- .titlestyle {
-  color:#6F84FF;
- }
+
   
 .line {
     border-left: 2px solid #ccc; /* Параметры линии */ 
@@ -142,14 +166,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 height:130px;
 padding-top: 20px;
 }
-.tooltip{
-	position:fixed;
-	z-index:999;
-	left:-9999px;
+div.tooltip span {
+	display			: none;
+	padding			: 2px 3px;
+	margin-left		: 8px;
+	width			: 150px;
+}
+div.tooltip:hover span {
+	display			: inline;
+	position		: absolute;
 	background-color:#dedede;
 	padding:5px;
 	border:1px solid #fff;
-	width:250px;
+	width:150px;
 }
 
 #workcontent{
@@ -159,8 +188,7 @@ background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #f5f7f9 100%); /
 background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
-
-height:500px;
+height:470px;
 }
 
 	/* Footer */
